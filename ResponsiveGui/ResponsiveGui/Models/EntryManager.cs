@@ -12,7 +12,7 @@ namespace ResponsiveGui.Models
 		private const double Variance = 0.0005;
 		private static readonly Random Rng = new();
 
-		public static async IAsyncEnumerator<Guid> GetEntries()
+		public static async IAsyncEnumerable<Guid> GetEntries()
 		{
 			for (var i = 0; i < Entries; i++)
 			{
