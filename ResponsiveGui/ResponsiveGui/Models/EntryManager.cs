@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
+/**
+DO NOT MODIFY THIS FILE
+IF YOU DO, YOU'LL GO STRAIGHT TO JAIL
+**/
+
 namespace ResponsiveGui.Models
 {
 	public static class EntryManager
