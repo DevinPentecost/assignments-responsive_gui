@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Threading.Tasks;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 
 namespace ResponsiveGui.Models
 {
-	public class EntryManager
+	public static class EntryManager
 	{
 		private const int Entries = 100 * 1000;
 		private const double Delay = 0.001;
@@ -19,7 +18,7 @@ namespace ResponsiveGui.Models
 				var delay = Delay + (Rng.NextDouble() * Variance - Variance / 2);
 				await Task.Delay(TimeSpan.FromSeconds(delay));
 
-				yield return new Guid();
+				yield return Guid.NewGuid();
 			}
 		}
 	}
